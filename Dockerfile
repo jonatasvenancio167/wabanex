@@ -12,8 +12,6 @@ RUN mix local.hex --force && \
 RUN mkdir -p /app
 WORKDIR /app
 
-COPY mix.exs mix.lock ./
-
 # compile the project
 RUN mix compile
 
